@@ -124,140 +124,142 @@ console.log(document.getElementById('gender').value);
 
 
 
-const hair = document.querySelectorAll('.hairCa') , scalp = document.querySelectorAll('.scalpCa');
+const hair = document.querySelectorAll('.hairCa') , scalp = document.querySelectorAll('.scalpCa') ;
 let pN , pPrice , pImg;
- pN = JSON.parse(hair[4].getAttribute('data-name'));
- pPrice =JSON.parse(hair[4].getAttribute('data-price'));
- pImg = JSON.parse(hair[4].getAttribute('data-img'));
+ pN = JSON.parse(hair[6].getAttribute('data-name'));
+ pPrice =JSON.parse(hair[6].getAttribute('data-price'));
+ pImg = JSON.parse(hair[6].getAttribute('data-img'));
 //  console.log(j);
  function renderDry(){
     document.querySelector('.dryness').classList.remove('hide');
 for(let i=0;i<pN.length;i++){
      document.querySelectorAll('.dryness .prod-holder')[i].classList.add('active');
 document.querySelectorAll('.dryness .prod-name')[i].textContent= pN[i];
-document.querySelectorAll('.dryness img')[i+1].src= pImg[i];
+document.querySelectorAll('.dryness img')[i].src= pImg[i];
 document.querySelectorAll('.dryness .prod-price')[i].innerHTML= pPrice[i]+'<sup>#</sup>';
  }
  }
  function renderDryness(){
-    pN = JSON.parse(hair[0].getAttribute('data-name'));
- pPrice =JSON.parse(hair[0].getAttribute('data-price'));
- pImg = JSON.parse(hair[0].getAttribute('data-img'));
+    pN = JSON.parse(hair[6].getAttribute('data-name'));
+ pPrice =JSON.parse(hair[6].getAttribute('data-price'));
+ pImg = JSON.parse(hair[6].getAttribute('data-img'));
  document.querySelector('.dryness').classList.remove('hide');
  for(let i =0; i<pN.length; i++){
      document.querySelectorAll('.dryness .prod-holder')[i].classList.add('active');
 document.querySelectorAll('.dryness .prod-name')[i].textContent= pN[i];
-document.querySelectorAll('.dryness img')[i+1].src= pImg[i];
+document.querySelectorAll('.dryness img')[i].src= pImg[i];
 document.querySelectorAll('.dryness .prod-price')[i].innerHTML= pPrice[i]+'<sup>#</sup>';
  } 
 }
  function renderDamage(){
-pN = JSON.parse(hair[5].getAttribute('data-name'));
- pPrice =JSON.parse(hair[5].getAttribute('data-price'));
- pImg = JSON.parse(hair[5].getAttribute('data-img'));
+pN = JSON.parse(hair[2].getAttribute('data-name'));
+ pPrice =JSON.parse(hair[2].getAttribute('data-price'));
+ pImg = JSON.parse(hair[2].getAttribute('data-img'));
  document.querySelector('.damage').classList.remove('hide');
  for(let i =0; i<pN.length; i++){
      document.querySelectorAll('.damage .prod-holder')[i].classList.add('active');
 document.querySelectorAll('.damage .prod-name')[i].textContent= pN[i];
-document.querySelectorAll('.damage img')[i+1].src= pImg[i];
+document.querySelectorAll('.damage img')[i].src= pImg[i];
 document.querySelectorAll('.damage .prod-price')[i].innerHTML= pPrice[i]+'<sup>#</sup>';
  }
  }
  function renderDamage2(){
-  pN = JSON.parse(hair[1].getAttribute('data-name'));
- pPrice =JSON.parse(hair[1].getAttribute('data-price'));
- pImg = JSON.parse(hair[1].getAttribute('data-img'));
+  pN = JSON.parse(hair[2].getAttribute('data-name'));
+ pPrice =JSON.parse(hair[2].getAttribute('data-price'));
+ pImg = JSON.parse(hair[2].getAttribute('data-img'));
  document.querySelector('.damage').classList.remove('hide');
  for(let i =0; i<pN.length; i++){
      document.querySelectorAll('.damage .prod-holder')[i].classList.add('active');
 document.querySelectorAll('.damage .prod-name')[i].textContent= pN[i];
-document.querySelectorAll('.damage img')[i+1].src= pImg[i];
+document.querySelectorAll('.damage img')[i].src= pImg[i];
 document.querySelectorAll('.damage .prod-price')[i].innerHTML= pPrice[i]+'<sup>#</sup>';
  }  
  }
  
  function renderLimp(){
-    pN = JSON.parse(hair[9].getAttribute('data-name'));
- pPrice =JSON.parse(hair[9].getAttribute('data-price'));
- pImg = JSON.parse(hair[9].getAttribute('data-img'));
+    pN = JSON.parse(hair[11].getAttribute('data-name'));
+ pPrice =JSON.parse(hair[11].getAttribute('data-price'));
+ pImg = JSON.parse(hair[11].getAttribute('data-img'));
  document.querySelector('.limp').classList.remove('hide');
  for(let i =0; i<pN.length; i++){
      document.querySelectorAll('.limp .prod-holder')[i].classList.add('active');
 document.querySelectorAll('.limp .prod-name')[i].textContent= pN[i];
-document.querySelectorAll('.limp img')[i+1].src= pImg[i];
+document.querySelectorAll('.limp img')[i].src= pImg[i];
 document.querySelectorAll('.limp .prod-price')[i].innerHTML= pPrice[i]+'<sup>#</sup>';
  }
+ 
  }
  
+ 
  function renderFrizzy(){
-    pN = JSON.parse(hair[10].getAttribute('data-name'));
- pPrice =JSON.parse(hair[10].getAttribute('data-price'));
- pImg = JSON.parse(hair[10].getAttribute('data-img'));
+    pN = JSON.parse(hair[3].getAttribute('data-name'));
+ pPrice =JSON.parse(hair[3].getAttribute('data-price'));
+ pImg = JSON.parse(hair[3].getAttribute('data-img'));
  document.querySelector('.frizzy').classList.remove('hide');
  for(let i =0; i<pN.length; i++){
      document.querySelectorAll('.frizzy .prod-holder')[i].classList.add('active');
 document.querySelectorAll('.frizzy .prod-name')[i].textContent= pN[i];
-document.querySelectorAll('.frizzy img')[i+1].src= pImg[i];
+document.querySelectorAll('.frizzy img')[i].src= pImg[i];
 document.querySelectorAll('.frizzy .prod-price')[i].innerHTML= pPrice[i]+'<sup>#</sup>';
  }
  }
  function renderFrizzy2(){
-    pN = JSON.parse(hair[2].getAttribute('data-name'));
- pPrice =JSON.parse(hair[2].getAttribute('data-price'));
- pImg = JSON.parse(hair[2].getAttribute('data-img'));
+    pN = JSON.parse(hair[3].getAttribute('data-name'));
+ pPrice =JSON.parse(hair[3].getAttribute('data-price'));
+ pImg = JSON.parse(hair[3].getAttribute('data-img'));
  document.querySelector('.frizzy').classList.remove('hide');
  for(let i =0; i<pN.length; i++){
      document.querySelectorAll('.frizzy .prod-holder')[i].classList.add('active');
 document.querySelectorAll('.frizzy .prod-name')[i].textContent= pN[i];
-document.querySelectorAll('.frizzy img')[i+1].src= pImg[i];
+document.querySelectorAll('.frizzy img')[i].src= pImg[i];
 document.querySelectorAll('.frizzy .prod-price')[i].innerHTML= pPrice[i]+'<sup>#</sup>';
  }
  }
  function renderDull(){
-   pN = JSON.parse(hair[11].getAttribute('data-name'));
- pPrice =JSON.parse(hair[11].getAttribute('data-price'));
- pImg = JSON.parse(hair[11].getAttribute('data-img'));
+   pN = JSON.parse(hair[4].getAttribute('data-name'));
+ pPrice =JSON.parse(hair[4].getAttribute('data-price'));
+ pImg = JSON.parse(hair[4].getAttribute('data-img'));
  document.querySelector('.dull').classList.remove('hide');
  for(let i =0; i<pN.length; i++){
      document.querySelectorAll('.dull .prod-holder')[i].classList.add('active');
 document.querySelectorAll('.dull .prod-name')[i].textContent= pN[i];
-document.querySelectorAll('.dull img')[i+1].src= pImg[i];
+document.querySelectorAll('.dull img')[i].src= pImg[i];
 document.querySelectorAll('.dull .prod-price')[i].innerHTML= pPrice[i]+'<sup>#</sup>';
  }  
  }
  function renderDull2(){
-   pN = JSON.parse(hair[3].getAttribute('data-name'));
- pPrice =JSON.parse(hair[3].getAttribute('data-price'));
- pImg = JSON.parse(hair[3].getAttribute('data-img'));
+   pN = JSON.parse(hair[4].getAttribute('data-name'));
+ pPrice =JSON.parse(hair[4].getAttribute('data-price'));
+ pImg = JSON.parse(hair[4].getAttribute('data-img'));
  document.querySelector('.dull').classList.remove('hide');
  for(let i =0; i<pN.length; i++){
      document.querySelectorAll('.dull .prod-holder')[i].classList.add('active');
 document.querySelectorAll('.dull .prod-name')[i].textContent= pN[i];
-document.querySelectorAll('.dull img')[i+1].src= pImg[i];
+document.querySelectorAll('.dull img')[i].src= pImg[i];
 document.querySelectorAll('.dull .prod-price')[i].innerHTML= pPrice[i]+'<sup>#</sup>';
  }  
  }
  function renderColored(){
-       pN = JSON.parse(hair[12].getAttribute('data-name'));
- pPrice =JSON.parse(hair[12].getAttribute('data-price'));
- pImg = JSON.parse(hair[12].getAttribute('data-img'));
+       pN = JSON.parse(hair[5].getAttribute('data-name'));
+ pPrice =JSON.parse(hair[5].getAttribute('data-price'));
+ pImg = JSON.parse(hair[5].getAttribute('data-img'));
  document.querySelector('.colored').classList.remove('hide');
  for(let i =0; i<pN.length; i++){
      document.querySelectorAll('.colored .prod-holder')[i].classList.add('active');
 document.querySelectorAll('.colored .prod-name')[i].textContent= pN[i];
-document.querySelectorAll('.colored img')[i+1].src= pImg[i];
+document.querySelectorAll('.colored img')[i].src= pImg[i];
 document.querySelectorAll('.colored .prod-price')[i].innerHTML= pPrice[i]+'<sup>#</sup>';
  }  
  }
   function renderColored2(){
-       pN = JSON.parse(hair[4].getAttribute('data-name'));
- pPrice =JSON.parse(hair[4].getAttribute('data-price'));
- pImg = JSON.parse(hair[4].getAttribute('data-img'));
+       pN = JSON.parse(hair[5].getAttribute('data-name'));
+ pPrice =JSON.parse(hair[5].getAttribute('data-price'));
+ pImg = JSON.parse(hair[5].getAttribute('data-img'));
  document.querySelector('.colored').classList.remove('hide');
  for(let i =0; i<pN.length; i++){
      document.querySelectorAll('.colored .prod-holder')[i].classList.add('active');
 document.querySelectorAll('.colored .prod-name')[i].textContent= pN[i];
-document.querySelectorAll('.colored img')[i+1].src= pImg[i];
+document.querySelectorAll('.colored img')[i].src= pImg[i];
 document.querySelectorAll('.colored .prod-price')[i].innerHTML= pPrice[i]+'<sup>#</sup>';
  }  
  }
@@ -287,6 +289,9 @@ hair.forEach(h=>{
             case 'limp':
                 renderLimp();
                 break;
+            case 'Limp':
+                renderLimp();
+                break;    
                 case 'frizzy':
                 renderFrizzy();
                 break;
@@ -350,6 +355,7 @@ if(!h.checked){
 }
     })
 })
+
 function renderSensitive(){
     pN = JSON.parse(scalp[2].getAttribute('data-name'));
  pPrice =JSON.parse(scalp[2].getAttribute('data-price'));
@@ -358,7 +364,7 @@ function renderSensitive(){
  for(let i =0; i<pN.length; i++){
      document.querySelectorAll('.sensitive .prod-holder')[i].classList.add('active');
 document.querySelectorAll('.sensitive .prod-name')[i].textContent= pN[i];
-document.querySelectorAll('.sensitive img')[i+1].src= pImg[i];
+document.querySelectorAll('.sensitive img')[i].src= pImg[i];
 document.querySelectorAll('.sensitive .prod-price')[i].innerHTML= pPrice[i]+'<sup>#</sup>';
  } 
 }
@@ -371,7 +377,7 @@ function renderHairFall(){
  for(let i =0; i<pN.length; i++){
      document.querySelectorAll('.hairfall .prod-holder')[i].classList.add('active');
 document.querySelectorAll('.hairfall .prod-name')[i].textContent= pN[i];
-document.querySelectorAll('.hairfall img')[i+1].src= pImg[i];
+document.querySelectorAll('.hairfall img')[i].src= pImg[i];
 document.querySelectorAll('.hairfall .prod-price')[i].innerHTML= pPrice[i]+'<sup>#</sup>';
  } 
 }
@@ -383,7 +389,7 @@ function renderHairFall2(){
  for(let i =0; i<pN.length; i++){
      document.querySelectorAll('.hairfall .prod-holder')[i].classList.add('active');
 document.querySelectorAll('.hairfall .prod-name')[i].textContent= pN[i];
-document.querySelectorAll('.hairfall img')[i+1].src= pImg[i];
+document.querySelectorAll('.hairfall img')[i].src= pImg[i];
 document.querySelectorAll('.hairfall .prod-price')[i].innerHTML= pPrice[i]+'<sup>#</sup>';
  }  
 }
@@ -395,7 +401,7 @@ function renderDandruff(){
  for(let i =0; i<pN.length; i++){
      document.querySelectorAll('.dandruff .prod-holder')[i].classList.add('active');
 document.querySelectorAll('.dandruff .prod-name')[i].textContent= pN[i];
-document.querySelectorAll('.dandruff img')[i+1].src= pImg[i];
+document.querySelectorAll('.dandruff img')[i].src= pImg[i];
 document.querySelectorAll('.dandruff .prod-price')[i].innerHTML= pPrice[i]+'<sup>#</sup>';
  } 
 }
@@ -407,7 +413,7 @@ function renderDandruff2(){
  for(let i =0; i<pN.length; i++){
      document.querySelectorAll('.dandruff .prod-holder')[i].classList.add('active');
 document.querySelectorAll('.dandruff .prod-name')[i].textContent= pN[i];
-document.querySelectorAll('.dandruff img')[i+1].src= pImg[i];
+document.querySelectorAll('.dandruff img')[i].src= pImg[i];
 document.querySelectorAll('.dandruff .prod-price')[i].innerHTML= pPrice[i]+'<sup>#</sup>';
  }
 }
@@ -419,7 +425,7 @@ function renderOily(){
  for(let i =0; i<pN.length; i++){
      document.querySelectorAll('.oily .prod-holder')[i].classList.add('active');
 document.querySelectorAll('.oily .prod-name')[i].textContent= pN[i];
-document.querySelectorAll('.oily img')[i+1].src= pImg[i];
+document.querySelectorAll('.oily img')[i].src= pImg[i];
 document.querySelectorAll('.oily .prod-price')[i].innerHTML= pPrice[i]+'<sup>#</sup>';
  } 
 }
