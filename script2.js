@@ -136,7 +136,7 @@ for(let i=0;i<pN.length;i++){
      document.querySelectorAll('.dryness .prod-holder')[i].classList.add('active');
 document.querySelectorAll('.dryness .prod-name')[i].textContent= pN[i];
 document.querySelectorAll('.dryness img')[i].src= pImg[i];
-document.querySelectorAll('.dryness .prod-price')[i].innerHTML= pPrice[i]+'<sup>#</sup>';
+document.querySelectorAll('.dryness .prod-price')[i].innerHTML= pPrice[i];
  }
  }
  function renderDryness(){
@@ -148,7 +148,7 @@ document.querySelectorAll('.dryness .prod-price')[i].innerHTML= pPrice[i]+'<sup>
      document.querySelectorAll('.dryness .prod-holder')[i].classList.add('active');
 document.querySelectorAll('.dryness .prod-name')[i].textContent= pN[i];
 document.querySelectorAll('.dryness img')[i].src= pImg[i];
-document.querySelectorAll('.dryness .prod-price')[i].innerHTML= pPrice[i]+'<sup>#</sup>';
+document.querySelectorAll('.dryness .prod-price')[i].innerHTML= pPrice[i];
  } 
 }
  function renderDamage(){
@@ -160,7 +160,7 @@ pN = JSON.parse(hair[2].getAttribute('data-name'));
      document.querySelectorAll('.damage .prod-holder')[i].classList.add('active');
 document.querySelectorAll('.damage .prod-name')[i].textContent= pN[i];
 document.querySelectorAll('.damage img')[i].src= pImg[i];
-document.querySelectorAll('.damage .prod-price')[i].innerHTML= pPrice[i]+'<sup>#</sup>';
+document.querySelectorAll('.damage .prod-price')[i].innerHTML= pPrice[i];
  }
  }
  function renderDamage2(){
@@ -172,7 +172,7 @@ document.querySelectorAll('.damage .prod-price')[i].innerHTML= pPrice[i]+'<sup>#
      document.querySelectorAll('.damage .prod-holder')[i].classList.add('active');
 document.querySelectorAll('.damage .prod-name')[i].textContent= pN[i];
 document.querySelectorAll('.damage img')[i].src= pImg[i];
-document.querySelectorAll('.damage .prod-price')[i].innerHTML= pPrice[i]+'<sup>#</sup>';
+document.querySelectorAll('.damage .prod-price')[i].innerHTML= pPrice[i];
  }  
  }
  
@@ -185,7 +185,7 @@ document.querySelectorAll('.damage .prod-price')[i].innerHTML= pPrice[i]+'<sup>#
      document.querySelectorAll('.limp .prod-holder')[i].classList.add('active');
 document.querySelectorAll('.limp .prod-name')[i].textContent= pN[i];
 document.querySelectorAll('.limp img')[i].src= pImg[i];
-document.querySelectorAll('.limp .prod-price')[i].innerHTML= pPrice[i]+'<sup>#</sup>';
+document.querySelectorAll('.limp .prod-price')[i].innerHTML= pPrice[i];
  }
  
  }
@@ -200,7 +200,7 @@ document.querySelectorAll('.limp .prod-price')[i].innerHTML= pPrice[i]+'<sup>#</
      document.querySelectorAll('.frizzy .prod-holder')[i].classList.add('active');
 document.querySelectorAll('.frizzy .prod-name')[i].textContent= pN[i];
 document.querySelectorAll('.frizzy img')[i].src= pImg[i];
-document.querySelectorAll('.frizzy .prod-price')[i].innerHTML= pPrice[i]+'<sup>#</sup>';
+document.querySelectorAll('.frizzy .prod-price')[i].innerHTML= pPrice[i];
  }
  }
  function renderFrizzy2(){
@@ -212,7 +212,7 @@ document.querySelectorAll('.frizzy .prod-price')[i].innerHTML= pPrice[i]+'<sup>#
      document.querySelectorAll('.frizzy .prod-holder')[i].classList.add('active');
 document.querySelectorAll('.frizzy .prod-name')[i].textContent= pN[i];
 document.querySelectorAll('.frizzy img')[i].src= pImg[i];
-document.querySelectorAll('.frizzy .prod-price')[i].innerHTML= pPrice[i]+'<sup>#</sup>';
+document.querySelectorAll('.frizzy .prod-price')[i].innerHTML= pPrice[i];
  }
  }
  function renderDull(){
@@ -224,7 +224,7 @@ document.querySelectorAll('.frizzy .prod-price')[i].innerHTML= pPrice[i]+'<sup>#
      document.querySelectorAll('.dull .prod-holder')[i].classList.add('active');
 document.querySelectorAll('.dull .prod-name')[i].textContent= pN[i];
 document.querySelectorAll('.dull img')[i].src= pImg[i];
-document.querySelectorAll('.dull .prod-price')[i].innerHTML= pPrice[i]+'<sup>#</sup>';
+document.querySelectorAll('.dull .prod-price')[i].innerHTML= pPrice[i];
  }  
  }
  function renderDull2(){
@@ -236,7 +236,7 @@ document.querySelectorAll('.dull .prod-price')[i].innerHTML= pPrice[i]+'<sup>#</
      document.querySelectorAll('.dull .prod-holder')[i].classList.add('active');
 document.querySelectorAll('.dull .prod-name')[i].textContent= pN[i];
 document.querySelectorAll('.dull img')[i].src= pImg[i];
-document.querySelectorAll('.dull .prod-price')[i].innerHTML= pPrice[i]+'<sup>#</sup>';
+document.querySelectorAll('.dull .prod-price')[i].innerHTML= pPrice[i];
  }  
  }
  function renderColored(){
@@ -248,7 +248,7 @@ document.querySelectorAll('.dull .prod-price')[i].innerHTML= pPrice[i]+'<sup>#</
      document.querySelectorAll('.colored .prod-holder')[i].classList.add('active');
 document.querySelectorAll('.colored .prod-name')[i].textContent= pN[i];
 document.querySelectorAll('.colored img')[i].src= pImg[i];
-document.querySelectorAll('.colored .prod-price')[i].innerHTML= pPrice[i]+'<sup>#</sup>';
+document.querySelectorAll('.colored .prod-price')[i].innerHTML= pPrice[i];
  }  
  }
   function renderColored2(){
@@ -260,7 +260,7 @@ document.querySelectorAll('.colored .prod-price')[i].innerHTML= pPrice[i]+'<sup>
      document.querySelectorAll('.colored .prod-holder')[i].classList.add('active');
 document.querySelectorAll('.colored .prod-name')[i].textContent= pN[i];
 document.querySelectorAll('.colored img')[i].src= pImg[i];
-document.querySelectorAll('.colored .prod-price')[i].innerHTML= pPrice[i]+'<sup>#</sup>';
+document.querySelectorAll('.colored .prod-price')[i].innerHTML= pPrice[i];
  }  
  }
  let store ;
@@ -365,7 +365,7 @@ function renderSensitive(){
      document.querySelectorAll('.sensitive .prod-holder')[i].classList.add('active');
 document.querySelectorAll('.sensitive .prod-name')[i].textContent= pN[i];
 document.querySelectorAll('.sensitive img')[i].src= pImg[i];
-document.querySelectorAll('.sensitive .prod-price')[i].innerHTML= pPrice[i]+'<sup>#</sup>';
+document.querySelectorAll('.sensitive .prod-price')[i].innerHTML= pPrice[i];
  } 
 }
 
@@ -378,7 +378,7 @@ function renderHairFall(){
      document.querySelectorAll('.hairfall .prod-holder')[i].classList.add('active');
 document.querySelectorAll('.hairfall .prod-name')[i].textContent= pN[i];
 document.querySelectorAll('.hairfall img')[i].src= pImg[i];
-document.querySelectorAll('.hairfall .prod-price')[i].innerHTML= pPrice[i]+'<sup>#</sup>';
+document.querySelectorAll('.hairfall .prod-price')[i].innerHTML= pPrice[i];
  } 
 }
 function renderHairFall2(){
@@ -390,7 +390,7 @@ function renderHairFall2(){
      document.querySelectorAll('.hairfall .prod-holder')[i].classList.add('active');
 document.querySelectorAll('.hairfall .prod-name')[i].textContent= pN[i];
 document.querySelectorAll('.hairfall img')[i].src= pImg[i];
-document.querySelectorAll('.hairfall .prod-price')[i].innerHTML= pPrice[i]+'<sup>#</sup>';
+document.querySelectorAll('.hairfall .prod-price')[i].innerHTML= pPrice[i];
  }  
 }
 function renderDandruff(){
@@ -402,7 +402,7 @@ function renderDandruff(){
      document.querySelectorAll('.dandruff .prod-holder')[i].classList.add('active');
 document.querySelectorAll('.dandruff .prod-name')[i].textContent= pN[i];
 document.querySelectorAll('.dandruff img')[i].src= pImg[i];
-document.querySelectorAll('.dandruff .prod-price')[i].innerHTML= pPrice[i]+'<sup>#</sup>';
+document.querySelectorAll('.dandruff .prod-price')[i].innerHTML= pPrice[i];
  } 
 }
 function renderDandruff2(){
@@ -414,7 +414,7 @@ function renderDandruff2(){
      document.querySelectorAll('.dandruff .prod-holder')[i].classList.add('active');
 document.querySelectorAll('.dandruff .prod-name')[i].textContent= pN[i];
 document.querySelectorAll('.dandruff img')[i].src= pImg[i];
-document.querySelectorAll('.dandruff .prod-price')[i].innerHTML= pPrice[i]+'<sup>#</sup>';
+document.querySelectorAll('.dandruff .prod-price')[i].innerHTML= pPrice[i];
  }
 }
 function renderOily(){
@@ -426,7 +426,7 @@ function renderOily(){
      document.querySelectorAll('.oily .prod-holder')[i].classList.add('active');
 document.querySelectorAll('.oily .prod-name')[i].textContent= pN[i];
 document.querySelectorAll('.oily img')[i].src= pImg[i];
-document.querySelectorAll('.oily .prod-price')[i].innerHTML= pPrice[i]+'<sup>#</sup>';
+document.querySelectorAll('.oily .prod-price')[i].innerHTML= pPrice[i];
  } 
 }
 
@@ -697,9 +697,9 @@ report.addEventListener('click',()=>{
   
 
 const quest = document.querySelectorAll('.question');
-quest[0].querySelector('select').addEventListener('change',()=>{
-    quest[0].setAttribute('data-check',true);
-})
+// quest[0].querySelector('select').addEventListener('change',()=>{
+//     quest[0].setAttribute('data-check',true);
+// })
 quest.forEach((q,i)=>{
 //    q.addEventListener('change',()=>{
 //     if(q.querySelector('#id')==='phNum'){
@@ -806,9 +806,9 @@ chemStyle.addEventListener('change',()=>{
 
 //html data to form push
 
-document.querySelector('.brnch').addEventListener('change',()=>{
-    document.getElementById('branch').value= document.querySelector('.brnch').value;
-})
+
+    document.getElementById('branch').value= 'Lavelle Road';
+
 
 document.querySelector('.hFrq').addEventListener('change',()=>{
     document.getElementById('heatStyleFreq').value= document.querySelector('.hFrq').value;
@@ -838,12 +838,12 @@ document.getElementById('stylistSID').addEventListener('change',()=>{
     console.log(document.getElementById('stylistSID').textContent);
 })
 // push phone numberinto phoneArr
-document.getElementById('phNum').addEventListener('change',()=>{
-phoneArr= document.getElementById('phNum').value;
-document.getElementById('contactNumber').value=phoneArr;
-document.getElementById('contactNumber').textContent=phoneArr;
-console.log(phoneArr);
-});
+// document.getElementById('phNum').addEventListener('change',()=>{
+// phoneArr= document.getElementById('phNum').value;
+// document.getElementById('contactNumber').value=phoneArr;
+// document.getElementById('contactNumber').textContent=phoneArr;
+// console.log(phoneArr);
+// });
 //ECM push into form
 document.querySelector('.ecm-ha').addEventListener('change',(e)=>{
 ecmHair.push(e.target.value);
