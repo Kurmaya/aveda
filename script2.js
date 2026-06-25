@@ -780,15 +780,15 @@ holders[3].setAttribute('data-check','true');
 document.querySelector('.next').classList.remove('hide');
     }
 })
-holders[4].addEventListener('change',()=>{
-    // checkArr=[];
-    // checkArr.push(holders[0].querySelectorAll('.question'));
-    let  tr =checkArr.every(x=> x.getAttribute('data-check')==='true');
-    if(tr){
-holders[4].setAttribute('data-check','true');
-document.querySelector('.next').classList.remove('hide');
-    }
-})
+// holders[4].addEventListener('change',()=>{
+//     // checkArr=[];
+//     // checkArr.push(holders[0].querySelectorAll('.question'));
+//     let  tr =checkArr.every(x=> x.getAttribute('data-check')==='true');
+//     if(tr){
+// holders[4].setAttribute('data-check','true');
+// document.querySelector('.next').classList.remove('hide');
+//     }
+// })
 // let tr = holders.every(check);
 // console.log(tr);
 const heatStyle = document.querySelector('.heat-yes');
@@ -876,29 +876,29 @@ document.querySelector('.homecare').addEventListener('change',()=>{
 
 //hair likes , scalp likes push
 
-const hLike = document.querySelectorAll('.hairLike'),sLike = document.querySelectorAll('.scalpLike');
-let hlike=[],slike=[];
-hLike.forEach(h=>{
-    h.addEventListener('click',()=>{
-        if(h.checked){
-            hlike.push(h.value);
+// const hLike = document.querySelectorAll('.hairLike'),sLike = document.querySelectorAll('.scalpLike');
+// let hlike=[],slike=[];
+// hLike.forEach(h=>{
+//     h.addEventListener('click',()=>{
+//         if(h.checked){
+//             hlike.push(h.value);
             
-        }
-        document.getElementById('hairLike').textContent= hlike.join(", ");
-        document.getElementById('hairLike').value= hlike.join(", ");
-    })
-})
+//         }
+//         document.getElementById('hairLike').textContent= hlike.join(", ");
+//         document.getElementById('hairLike').value= hlike.join(", ");
+//     })
+// })
 
-sLike.forEach(s=>{
-    s.addEventListener('click',()=>{
-        if(s.checked){
-            slike.push(s.value);
-        }
-        document.getElementById('scalpLike').textContent= slike.join(", ");
-        document.getElementById('scalpLike').value= slike.join(", ");
-    })
+// sLike.forEach(s=>{
+//     s.addEventListener('click',()=>{
+//         if(s.checked){
+//             slike.push(s.value);
+//         }
+//         document.getElementById('scalpLike').textContent= slike.join(", ");
+//         document.getElementById('scalpLike').value= slike.join(", ");
+//     })
     
-})
+// })
 
 //heat style push
 const heat =document.querySelectorAll('input[name="Do you heatstyle?"]');
