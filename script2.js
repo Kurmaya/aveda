@@ -737,8 +737,8 @@ let checkArr = [],checkArr2 =[], checkArr3 = [], checkArr4 = [],checkArr5=[];
 b.forEach(br=> checkArr.push(br));
 holders[1].querySelectorAll('.question').forEach(q=>checkArr2.push(q));
 holders[2].querySelectorAll('.question').forEach(q=>checkArr3.push(q));
-holders[3].querySelectorAll('.question').forEach(q=>checkArr4.push(q));
-holders[4].querySelectorAll('.question').forEach(q=>checkArr5.push(q));
+// holders[3].querySelectorAll('.question').forEach(q=>checkArr4.push(q));
+// holders[4].querySelectorAll('.question').forEach(q=>checkArr5.push(q));
 
 // if(b.forEach(c.getAttribute('data-check'))==='true'){
 // holder[0].setAttribute('data-check','true');
@@ -792,15 +792,27 @@ document.querySelector('.next').classList.remove('hide');
 // let tr = holders.every(check);
 // console.log(tr);
 const heatStyle = document.querySelector('.heat-yes');
+const heatStyleNo = document.querySelector('.heat-no');
 const chemStyle = document.querySelector('.chem-yes');
+const chemStyleNo = document.querySelector('.chem-no');
 heatStyle.addEventListener('change',()=>{
     if(heatStyle.checked){
         document.querySelectorAll('.hold')[0].classList.remove('hide');
     }
 })
+heatStyleNo.addEventListener('change',()=>{
+    if(heatStyleNo.checked){
+        document.querySelectorAll('.hold')[0].classList.add('hide');
+    }
+})
 chemStyle.addEventListener('change',()=>{
     if(chemStyle.checked){
         document.querySelectorAll('.hold')[1].classList.remove('hide');
+    }
+})
+chemStyleNo.addEventListener('change',()=>{
+    if(chemStyleNo.checked){
+        document.querySelectorAll('.hold')[1].classList.add('hide');
     }
 })
 
@@ -845,12 +857,12 @@ document.getElementById('stylistSID').addEventListener('change',()=>{
 // console.log(phoneArr);
 // });
 //ECM push into form
-document.querySelector('.ecm-ha').addEventListener('change',(e)=>{
-ecmHair.push(e.target.value);
-document.getElementById('ecm-hair').textContent = ecmHair.join(", ");
-document.getElementById('ecm-hair').value = ecmHair.join(", ");
-    console.log(ecmHair);
-});
+// document.querySelector('.ecm-ha').addEventListener('change',(e)=>{
+// ecmHair.push(e.target.value);
+// document.getElementById('ecm-hair').textContent = ecmHair.join(", ");
+// document.getElementById('ecm-hair').value = ecmHair.join(", ");
+//     console.log(ecmHair);
+// });
 document.querySelector('.ecm-sc').addEventListener('change',(e)=>{
 ecmScalp.push(e.target.value);
 document.getElementById('ecm-scalp').textContent = ecmScalp.join(", ");
@@ -867,12 +879,12 @@ console.log(e.target.value);
 })
 
 //homeproducts into form
-document.querySelector('.homecare').addEventListener('change',()=>{
-    hcare= document.querySelector('.homecare').value;
-    document.getElementById('homeProds').textContent=hcare;
-    document.getElementById('homeProds').value=hcare;
-    console.log(document.getElementById('homeProds').textContent);
-})
+// document.querySelector('.homecare').addEventListener('change',()=>{
+//     hcare= document.querySelector('.homecare').value;
+//     document.getElementById('homeProds').textContent=hcare;
+//     document.getElementById('homeProds').value=hcare;
+//     console.log(document.getElementById('homeProds').textContent);
+// })
 
 //hair likes , scalp likes push
 
